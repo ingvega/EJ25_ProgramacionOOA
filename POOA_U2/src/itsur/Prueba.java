@@ -14,6 +14,11 @@ public class Prueba {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+//        String patronNombres="[a-zA-Z .ñÑáéíóúÁÉÍÓÚ]{2,35}";
+//        String nombre="jUAN123";
+//        System.out.println(nombre.trim().matches(patronNombres));
+        
+        
         Alumno a=new Alumno();
         //a.nombre="Juan";
         System.out.println(a.getSemestre());
