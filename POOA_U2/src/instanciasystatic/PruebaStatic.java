@@ -31,7 +31,6 @@ public class PruebaStatic {
         Alumno.numSemestres=13;
         a.numSemestres=9;
         
-        String nombre=JOptionPane.showInputDialog("Ingresa tu nombre");
         
     }
 }
