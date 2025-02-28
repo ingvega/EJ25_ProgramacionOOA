@@ -12,10 +12,21 @@ import javax.swing.JOptionPane;
  */
 public class ValidacionDatos {
     public static void main(String[] args) {
+//        System.out.println(Validacion.enteroValido(""));
+//        System.out.println(Validacion.enteroValido("-"));
+//        System.out.println(Validacion.enteroValido("-100"));
+//        System.out.println(Validacion.enteroValido("100"));
+//        System.out.println(Validacion.enteroValido("     "));
+//        System.out.println(Validacion.enteroValido("1 00"));
+//        System.out.println(Validacion.enteroValido("0"));
+//        System.out.println(Validacion.enteroValido("-0"));
+        
+        
         String respuesta;
         do{
             respuesta=JOptionPane.showInputDialog("Ingresa el semestre actual");
-        }while(respuesta==null || respuesta.trim().equals(""));
+        }while(respuesta==null || respuesta.trim().equals("")
+                || Validacion.enteroValido(respuesta)==false);
         
         int dato=Integer.parseInt(respuesta);
         
