@@ -34,3 +34,4 @@ private.xml
 project.properties
 project.xml
 *.properties
+/POOA_U2/nbproject/private/
