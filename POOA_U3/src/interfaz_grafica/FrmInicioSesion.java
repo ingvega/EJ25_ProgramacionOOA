@@ -111,8 +111,11 @@ public class FrmInicioSesion extends javax.swing.JFrame {
             //Revisar si ese usuario tiene la contraseña que se ingresó
             usuario=Informacion.usuariosRegistrados.get(posicion);
             if(usuario.getContrasenia().equals(String.valueOf(txtContrasenia.getPassword()))){
-                JOptionPane.showMessageDialog(this, "Bienvenido " + usuario.getNombre(),
-                    "Iniciar sesión", JOptionPane.INFORMATION_MESSAGE);
+//                JOptionPane.showMessageDialog(this, "Bienvenido " + usuario.getNombre(),
+//                    "Iniciar sesión", JOptionPane.INFORMATION_MESSAGE);
+                FrmPrincipal frm=new FrmPrincipal();
+                frm.setVisible(true);
+                this.dispose();
             }else{
                 JOptionPane.showMessageDialog(this, "Usuario y/o contraseña incorrectos",
                     "Iniciar sesión", JOptionPane.ERROR_MESSAGE);
